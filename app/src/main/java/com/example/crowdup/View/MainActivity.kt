@@ -1,7 +1,8 @@
-package com.example.crowdup
+package com.example.crowdup.View
 
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.crowdup.R
 
 class MainActivity : AppCompatActivity() {
 
