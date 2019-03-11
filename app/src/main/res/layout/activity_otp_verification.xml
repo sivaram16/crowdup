@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/otpLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="48dp">
+
+        <TextView
+            android:id="@+id/otpTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OTP "
+            android:textSize="36sp"
+            android:fontFamily="@font/muli_black"
+            android:textColor="@color/colorAccent"
+            />
+
+        <TextView
+            android:id="@+id/verificationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verification"
+            android:textSize="36sp"
+            android:fontFamily="@font/muli_black"
+            android:textColor="#5B5B5B" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/otpEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="42dp"
+        android:textSize="18sp"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="@font/muli"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        android:text="We will send you an SMS to verify your phone number. Carrier Charges may apply."
+        app:layout_constraintTop_toBottomOf="@id/otpLinearLayout" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/otpTextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/otpEditText"
+        android:layout_marginTop="48dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="42dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/phoneNumberEditText"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/autoVerifying"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/otpTextInputLayout"
+        android:text="Autoverifying OTP. You can also enter it manually."
+        android:layout_marginEnd="42dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/muli"
+        android:textSize="14sp"
+        android:layout_marginStart="42dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Verifying"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Verify"
+        android:fontFamily="sans-serif"
+        app:cornerRadius="100dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="42dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/autoVerifying"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/resendOtp"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="42dp"
+        android:text="resend OTP"
+        android:fontFamily="sans-serif"
+        app:cornerRadius="100dp"
+        app:strokeColor="@color/colorPrimary"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Verifying" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="14sp"
+        android:text="Cancel"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        app:cornerRadius="100dp"
+        app:layout_constraintRight_toLeftOf="@id/resendOtp"
+        app:layout_constraintTop_toBottomOf="@id/Verifying"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
