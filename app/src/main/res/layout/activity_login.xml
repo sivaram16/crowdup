@@ -49,12 +49,12 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:hint="Username">
+        android:hint="Phone number">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/usernameEditText"/>
+            android:id="@+id/phoneNumber"/>
 
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
@@ -80,7 +80,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/materialButton"
+        android:id="@+id/signIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -97,10 +97,11 @@
         android:fontFamily="sans-serif"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
+        android:id="@+id/signUp"
         android:text="Sign Up"
         style="@style/Widget.MaterialComponents.Button.TextButton"
         app:cornerRadius="100dp"
-        app:layout_constraintEnd_toStartOf="@+id/materialButton"
+        app:layout_constraintEnd_toStartOf="@+id/signIn"
         app:layout_constraintTop_toBottomOf="@+id/passwordTextInputLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

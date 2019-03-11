@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "611334419369",
+    "firebase_url": "https://crowdup-66af4.firebaseio.com",
+    "project_id": "crowdup-66af4",
+    "storage_bucket": "crowdup-66af4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:611334419369:android:dadd02082dc63d41",
+        "android_client_info": {
+          "package_name": "com.example.crowdup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "611334419369-u6cgphsjqc5qt5brrmisuf06hng03i65.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.crowdup",
+            "certificate_hash": "c27c520e97f30575456e9c449bc407455ab5bed0"
+          }
+        },
+        {
+          "client_id": "611334419369-p97c3u8n06jrrhrl6t5hg0mer7b111e3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWgK1Kb4F2gwn6gLyQn6WwAXeMoXjvMU8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "611334419369-p97c3u8n06jrrhrl6t5hg0mer7b111e3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
