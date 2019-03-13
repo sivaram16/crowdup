@@ -185,7 +185,9 @@
                         android:text="Business/Profession"
                         android:textSize="18sp"
                         android:textColor="@android:color/black"
-                        android:layout_margin="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginStart="16dp"
                         android:paddingStart="42dp"
                         android:fontFamily="@font/muli"
                         android:textStyle="bold"/>
@@ -194,7 +196,7 @@
                         android:layout_height="wrap_content"
                         android:tint="@color/colorAccent"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginEnd="16dp"
+                        android:layout_marginEnd="8dp"
                         android:src="@drawable/ic_add_box_black_24dp"/>
 
                 </LinearLayout>
@@ -224,8 +226,9 @@
                         android:text="Your Interests"
                         android:textSize="18sp"
                         android:textColor="@android:color/black"
-                        android:layout_margin="16dp"
-                        android:paddingStart="42dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginStart="16dp"                        android:paddingStart="42dp"
                         android:fontFamily="@font/muli"
                         android:textStyle="bold"/>
                     <ImageView
@@ -233,7 +236,7 @@
                         android:layout_height="wrap_content"
                         android:tint="@color/colorAccent"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginEnd="16dp"
+                        android:layout_marginEnd="8dp"
                         android:src="@drawable/ic_add_box_black_24dp"/>
 
                 </LinearLayout>
