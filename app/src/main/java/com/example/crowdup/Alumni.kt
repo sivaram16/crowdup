@@ -2,6 +2,10 @@ package com.example.crowdup
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Gravity
+import android.view.View
+import androidx.core.view.GravityCompat
+import androidx.drawerlayout.widget.DrawerLayout
 
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
@@ -9,6 +13,7 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
+import kotlinx.android.synthetic.main.activity_alumni.*
 
 class Alumni : AppCompatActivity(), OnMapReadyCallback {
 
@@ -23,6 +28,9 @@ class Alumni : AppCompatActivity(), OnMapReadyCallback {
         mapFragment.getMapAsync(this)
     }
 
+    fun showDrawer(view: View) {
+        drawerLayout.openDrawer(GravityCompat.START)
+    }
     /**
      * Manipulates the map once available.
      * This callback is triggered when the map is ready to be used.
