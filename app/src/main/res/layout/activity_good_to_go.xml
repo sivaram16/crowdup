@@ -16,7 +16,7 @@
         android:fontFamily="@font/muli_black"
         android:textColor="@color/colorAccent"
         android:layout_marginStart="42dp"
-        android:layout_marginTop="48dp"/>
+        android:layout_marginTop="105dp"/>
 
     <ImageView
         android:id="@+id/imageView"
@@ -47,7 +47,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/Verifying"
+        android:id="@+id/continueButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"

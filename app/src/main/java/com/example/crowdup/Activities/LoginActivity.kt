@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.crowdup.Alumni
+import com.example.crowdup.SignUpActivity
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login.*
 
@@ -18,8 +19,8 @@ class LoginActivity : AppCompatActivity() {
         setOnClickListener()
     }
     fun setOnClickListener() {
-        signIn.setOnClickListener {
-            val intent = Intent(this, Alumni::class.java)
+        signUp.setOnClickListener {
+            val intent = Intent(this, SignUpActivity::class.java)
             startActivity(intent)
         }
     }

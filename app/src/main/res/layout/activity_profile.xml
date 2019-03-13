@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_marginTop="50dp"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="60dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <ImageView
@@ -50,14 +55,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/profileName">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
 
             <TextView
                 android:id="@+id/profileCompletionTextView"
@@ -70,7 +68,7 @@
                 android:textStyle="bold"
                 android:layout_marginStart="30dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/profileName"
                 android:layout_marginTop="24dp"/>
 
             <ProgressBar
@@ -81,6 +79,7 @@
                 android:layout_centerHorizontal="true"
                 android:max="100"
                 android:progress="45"
+                android:progressTint="@color/colorPrimary"
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="24dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -116,6 +115,7 @@
                     android:textColor="@color/colorAccent"/>
 
                 <ImageView
+                    android:id="@+id/EditPersonalInformation"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="end"
@@ -154,6 +154,7 @@
                     android:textColor="@color/colorAccent"/>
 
                 <ImageView
+                    android:id="@+id/editEducationalInformation"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="end"
@@ -165,7 +166,7 @@
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/businessCardView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="16dp"
                 android:layout_marginStart="24dp"
@@ -176,6 +177,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:orientation="horizontal">
 
                     <TextView
@@ -192,6 +194,7 @@
                         android:fontFamily="@font/muli"
                         android:textStyle="bold"/>
                     <ImageView
+                        android:id="@+id/addBusiness"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:tint="@color/colorAccent"
@@ -206,7 +209,7 @@
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/yourInterestsCardView"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="24dp"
                 android:layout_marginStart="24dp"
@@ -217,6 +220,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
                     android:orientation="horizontal">
 
                     <TextView
@@ -232,6 +236,7 @@
                         android:fontFamily="@font/muli"
                         android:textStyle="bold"/>
                     <ImageView
+                        android:id="@+id/addYourInterests"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:tint="@color/colorAccent"
@@ -352,8 +357,7 @@
                 android:layout_marginStart="42dp"
                 android:layout_marginEnd="26dp"/>
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

@@ -5,23 +5,28 @@
     <group >
 
         <item
+            android:id="@+id/your_interests"
             android:icon="@drawable/ic_edit_black_24dp"
             android:title="Customize your interests"
             android:iconTint="@color/colorAccent"
             />
         <item
+            android:id="@+id/yout_meetups"
             android:icon="@drawable/ic_group_black_24dp"
             android:iconTint="@color/colorAccent"
             android:title="Your Meetups" />
         <item
+            android:id="@+id/profile"
             android:icon="@drawable/ic_person_black_24dp"
             android:iconTint="@color/colorAccent"
             android:title="Profile" />
         <item
+            android:id="@+id/settings"
             android:icon="@drawable/ic_settings_black_24dp"
             android:iconTint="@color/colorAccent"
             android:title="Settings" />
         <item
+            android:id="@+id/logout"
             android:icon="@drawable/ic_exit_to_app_black_24dp"
             android:iconTint="@color/colorPrimary"
             android:title="Logout" />

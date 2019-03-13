@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.crowdup">
-
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -18,9 +17,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+        <activity android:name=".AddMeetupActivity"></activity>
+        <activity android:name=".EducationActivity"></activity>
+        <activity android:name=".GoodToGoActivity"></activity>
+        <activity android:name=".OTPVerification"></activity>
+        <activity android:name=".PersonalActivity"></activity>
+        <activity android:name=".ProfessionActivity"></activity>
+        <activity android:name=".ProfileActivity"></activity>
+        <activity android:name=".QualificationActivity"></activity>
+        <activity android:name=".SignUpActivity"></activity>
+        <activity android:name=".InterestsActivity"></activity>
 
 
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -35,7 +46,7 @@
 
         <activity
             android:name=".Alumni"
-            android:label="@string/title_activity_alumni"></activity>
+            android:label="@string/title_activity_alumni" />
         <activity
             android:name=".AlumniMap"
             android:label="@string/title_activity_alumni_map" />
